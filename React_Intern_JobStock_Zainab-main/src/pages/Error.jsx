@@ -1,18 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import logo from "./../img/logo.png";
+import {Link} from "react-router-dom";
+import Navbar from "./../components/Navbar";
+
 const Error =() =>{
     return (
         <>
-        <section class="simple-bg-screen big-wrap">
-				<div class="container">
-					<div class="error-page">
+		<Navbar/>
+		
+        <section className="simple-bg-screen big-wrap">
+				<div className="container">
+					<div className="error-page">
 						<h2>4<span>0</span>4</h2>
 						<p>Oops...looks like we got lost</p> 
-						<a class="btn btn-success small-btn">Let's Go Home</a>
+						
+					    <button className="btn btn-success small-btn"><Link> Let's Go Home </Link></button>
+					    
+						
 					</div>
 				</div>
-			</section>
+		</section>
+		
            
            
         </>

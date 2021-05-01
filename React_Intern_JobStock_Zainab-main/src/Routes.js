@@ -13,6 +13,7 @@ import CompanyDetail from './pages/CompanyDetail'
 import ManageResume from './pages/ManageResume'
 import ResumeData from './data/employee/Resume'
 import CompanyData from './data/company/Data'
+import Error from './pages/Error'
 
 const Routes = () => {
   return(
@@ -26,6 +27,7 @@ const Routes = () => {
       <Route exact path="/Client" render={props => <Home {...props} />}/>
       <Route exact path="/Payment" render={props => <Payment {...props} />}/>
       <Route exact path="/clientProfile" render={props => <ClientProfile {...props} />}/>
+      <Route exact path="/Error" render={props => <Error {...props} />}/>
      
       {ResumeData.map(data=>{
                 const {id} = data;
